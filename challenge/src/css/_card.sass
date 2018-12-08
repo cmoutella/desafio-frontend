@@ -1,13 +1,15 @@
 .qcx
 	&-card
 		background-color: #fff
-		color: #345840
+		color: $green
 		width: 60%
 		margin: 80px auto
-		height: 250px
-		display: flex
 		box-shadow: 1px 1px 1px 3px #88888860
 		border-radius: 3px
+
+		&__header
+			display: flex
+			padding-bottom: 40px
 
 		&__user
 			width: 30%
@@ -52,3 +54,29 @@
 			text-transform: uppercase
 			color: #A5D1B0
 			border: solid 2px #A5D1B0
+		
+	&-repo
+		box-sizing: border-box
+		padding: 0 40px
+		display: none
+
+		&--active
+			display: block
+
+		&__title
+			margin-bottom: 30px
+			font-size: 18px
+		
+		&__list
+			list-style: none
+			padding: 0
+
+			li
+				box-sizing: border-box
+				font-size: 16px
+
+			li:nth-child(even)
+				background-color: #fff
+			
+			li:nth-child(odd)
+				background-color: $green

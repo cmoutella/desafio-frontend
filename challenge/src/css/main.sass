@@ -1,7 +1,7 @@
 @import '_variables'
 @import '_navbar'
+@import '_header'
 @import '_about'
-@import '_challenge'
 @import '_card'
 
 body, html
@@ -17,6 +17,17 @@ a
 
 .qcx
 	font-family: $sans
+
+	&-challenge
+		background-color: #EBF6EE 
+		margin: 0px auto
+		padding: 80px 0
+		width: 100%
+
+		&__title
+			font-size: 26px
+			margin-bottom: 40px
+			text-align: center
 	
 	&-footer
 		margin: 0
