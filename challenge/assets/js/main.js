@@ -19,7 +19,7 @@ function getRepositories(url) {
 			let repos = data.results
 			return repos.map(function(repo) {
 				let li = createNode('li')
-				li.innerHTML = ${repo.name}
+				li.innerHTML = repo.name
 				append(ul, li)
 			})
 		})
@@ -37,7 +37,7 @@ function getFavorites(url) {
 			let faves = data.results
 			return faves.map(function(favorite) {
 				let li = createNode('li')
-				li.innerHTML = ${favorite.name}
+				li.innerHTML = favorite.name
 				append(ul, li)
 			})
 		})
