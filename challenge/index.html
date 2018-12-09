@@ -73,8 +73,12 @@
 						<li class="qcx-card__item"></li>
 					</ul>
 					<div class="qcx-card__group">
-						<button class="qcx-card__button" id="btn_repositories">Ver Repositórios</button>
-						<button class="qcx-card__button" id="btn_favorites">Ver Favoritos</button>
+						<button class="qcx-card__button" id="btn_repositories" onClick="getRepos(
+							'https://api.github.com/users/cmoutella/repos?&per_page=100'
+						)">Ver Repositórios</button>
+						<button class="qcx-card__button" id="btn_favorites" onClick="getRepos(
+							'https://api.github.com/users/cmoutella/starred?&per_page=100'
+						)">Ver Favoritos</button>
 					</div>
 				</div>
 			</div>
